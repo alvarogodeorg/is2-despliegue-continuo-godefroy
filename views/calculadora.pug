@@ -1,0 +1,20 @@
+html
+  head
+    title Calculadora
+  body
+    h1 Calculadora
+    div
+        input(type='text' placeholder="Operando 1" id="op1")
+    div
+        input(type='text' placeholder="Operando 2" id="op2")
+    div
+        input(type='text' readonly='true' id="resultado" value=suma) 
+    div
+        button(id='butsumar', onclick="sumar()") Sumar
+ 
+    script.
+        function sumar(){
+            var op1 = document.getElementById("op1")
+            var op2 = document.getElementById("op2")
+            window.location.href = '/sumar?op1=' + op1.value + '&op2=' + op2.value
+        }
