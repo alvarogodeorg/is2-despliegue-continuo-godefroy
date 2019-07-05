@@ -6,7 +6,7 @@ export class Calculadora
 {
     sumar(op1:number, op2:number)
     {
-        return op1 + op2
+        return op1 - op2
     }
 }
 
